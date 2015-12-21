@@ -1,0 +1,25 @@
+; Eris.pkg
+;
+;Language - standard language definitions
+&EN
+
+;Standard SIS file header
+#{"Eris"},(0xeee3c37c),1,0,0
+
+;Localised Vendor name
+%{"JarinSoft-EN"}
+
+;Unique Vendor name
+:"JarinSoft"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;Files to install
+"\Symbian\9.1\S60_3rd_MR\Epoc32\release\gcce\urel\Eris.exe"-"!:\sys\bin\Eris.exe"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\Eris.rsc"-"!:\resource\apps\Eris.rsc"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\private\10003a3f\apps\Eris_reg.rsc"-"!:\private\10003a3f\import\apps\Eris_reg.rsc"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\Eris.mif" -"!:\resource\apps\Eris.mif"
+"\Symbian\9.1\S60_3rd_MR\Epoc32\data\z\resource\apps\eee3c37c.rsc"-"c:\private\101f875a\import\[eee3c37c].rsc"
+
+; End of File

@@ -1,0 +1,16 @@
+/*
+============================================================================
+ Name        : Eris.rss
+ Author      : Vinicius Jarina (mailto:viniciusjarina@gmail.com)
+ Version     :
+ Copyright   : Copyright (c) 2009 JarinSoft. (http://viniciusjarina.googlepages.com/)
+ Description : Main application class
+============================================================================
+*/
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+PRJ_MMPFILES
+gnumakefile Icons_scalable_dc.mk
+Eris.mmp

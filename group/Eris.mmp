@@ -1,0 +1,61 @@
+/*
+============================================================================
+ Name        : Eris.rss
+ Author      : Vinicius Jarina (mailto:viniciusjarina@gmail.com)
+ Version     :
+ Copyright   : Copyright (c) 2009 JarinSoft. (http://viniciusjarina.googlepages.com/)
+ Description : Project specification file for Eris
+============================================================================
+*/
+
+TARGET            Eris.exe
+TARGETTYPE        exe
+UID		          0x0 0xeee3c37c
+
+SECUREID	      0xeee3c37c
+EPOCSTACKSIZE	  0x5000
+
+SOURCEPATH        ..\src
+SOURCE            Eris.cpp
+SOURCE            ErisApplication.cpp
+SOURCE            ErisAppView.cpp ErisAppUi.cpp
+SOURCE            ErisDocument.cpp
+
+SOURCEPATH        ..\data
+
+START RESOURCE    Eris.rss
+HEADER
+TARGETPATH        \resource\apps
+END //RESOURCE
+
+START RESOURCE    Eris_reg.rss
+TARGETPATH 	      \private\10003a3f\apps
+END //RESOURCE
+
+START RESOURCE    eee3c37c.rss
+TARGETPATH        \resource\apps
+END //RESOURCE
+
+USERINCLUDE       ..\inc
+
+SYSTEMINCLUDE     \epoc32\include
+
+LIBRARY           euser.lib
+LIBRARY           apparc.lib
+LIBRARY           cone.lib
+LIBRARY           eikcore.lib
+LIBRARY           avkon.lib
+LIBRARY           commonengine.lib
+LIBRARY		  	  efsrv.lib
+LIBRARY           estor.lib
+LIBRARY           etel3rdparty.lib apgrfx.lib ws32.lib esock.lib smsu.lib gsmu.lib msgs.lib bafl.lib smcm.lib // CTelephony
+
+LANG SC
+
+VENDORID	  	  0
+CAPABILITY	  	  LocalServices Location NetworkServices PowerMgmt ProtServ ReadDeviceData ReadUserData SurroundingsDD SwEvent TrustedUI UserEnvironment WriteDeviceData WriteUserData
+// End of File
+
+SOURCEPATH ..\src
+SOURCE DeviceInfoUtility.cpp GetLocationURL.cpp SmsReceiver.cpp log.cpp SmsSocketEngine.cpp SmsMtmSettings.cpp
+EPOCPROCESSPRIORITY low

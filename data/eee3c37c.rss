@@ -1,0 +1,18 @@
+/*
+============================================================================
+ Name        : eee3c37.rss
+ Author      : Vinicius Jarina (mailto:viniciusjarina@gmail.com)
+ Version     :
+ Copyright   : Copyright (c) 2009 JarinSoft. (http://viniciusjarina.googlepages.com/)
+ Description : Auto Startup Resource
+============================================================================
+*/
+
+#include <startupitem.rh>
+
+
+RESOURCE STARTUP_ITEM_INFO startexe
+    {
+    executable_name = "c:\\sys\\bin\\Eris.exe";
+    recovery = EStartupItemExPolicyNone;
+    }

@@ -1,0 +1,23 @@
+/*
+============================================================================
+ Name        : Eris.hrh
+ Author      : Vinicius Jarina (mailto:viniciusjarina@gmail.com)
+ Version     :
+ Copyright   : Copyright (c) 2009 JarinSoft. (http://viniciusjarina.googlepages.com/)
+ Description : Enumerations used in the application UI
+============================================================================
+*/
+
+#ifndef __ERIS_HRH__
+#define __ERIS_HRH__
+
+// Eris enumerate command codes
+enum TErisIds
+    {
+    EErisCmdMyPositionURL = 1, // start value must not be 0
+    EErisCmdSendMyPosition,
+    EErisCmdQuit,
+    EErisCmdAbout
+    };
+
+#endif // __ERIS_HRH__

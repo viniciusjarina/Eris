@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="tiny" height="792px" version="1.1" viewBox="0 0 612 792" width="612px" x="0px" y="0px">
+<linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="6.5" x2="602.5" y1="380.5" y2="380.5">
+<stop offset="0" style="stop-color:#123123"/>
+<stop offset="0.9505" style="stop-color:#007F0A"/>
+<stop offset="1" style="stop-color:#007F0A"/>
+</linearGradient>
+<polygon fill="url(#SVGID_1_)" points="56.5,115.5 234.5,141.5 467.5,113.5 602.5,136.5   562.5,647.5 417.5,613.5 178.5,645.5 6.5,619.5 " stroke="#000000" stroke-width="10"/>
+<g>
+<g>
+<rect fill="none" height="594.496" width="600.5" x="11.5" y="107.5"/>
+</g>
+</g>
+<linearGradient gradientTransform="matrix(6.9545 0 0 -6.9545 2.9773 5594.0269)" gradientUnits="userSpaceOnUse" id="SVGID_2_" x1="10.439" x2="10.439" y1="721.2734" y2="721.2734">
+<stop offset="0" style="stop-color:#FFFFFF"/>
+<stop offset="0.8146" style="stop-color:#000000"/>
+<stop offset="1" style="stop-color:#123123"/>
+</linearGradient>
+<path d="M75.583,577.9" fill="url(#SVGID_2_)"/>
+<linearGradient gradientUnits="userSpaceOnUse" id="SVGID_3_" x1="132.9487" x2="477.5" y1="382.5244" y2="382.5244">
+<stop offset="0" style="stop-color:#FF1F2F"/>
+<stop offset="1" style="stop-color:#123123"/>
+</linearGradient>
+<path d="M477.5,442.718c-60.107,83.62-182.609,106.638-273.617,51.408  C131.078,449.943,111.038,359.896,159.124,293c38.468-53.517,116.87-68.247,175.115-32.901  c46.596,28.276,59.421,85.907,28.646,128.72c-24.62,34.251-74.796,43.679-112.074,21.056c-29.821-18.096-38.03-54.979-18.333-82.38  c15.757-21.921,47.87-27.954,71.728-13.476c19.084,11.583,24.338,35.187,11.733,52.724c-10.085,14.03-30.638,17.89-45.906,8.625  c-12.214-7.413-15.576-22.52-7.509-33.743" fill="url(#SVGID_3_)" stroke="#000000" stroke-width="10"/>
+</svg>

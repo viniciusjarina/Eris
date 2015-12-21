@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name        : Eris_reg.rss
+ Author      : Vinicius Jarina (mailto:viniciusjarina@gmail.com)
+ Version     :
+ Copyright   : Copyright (c) 2009 JarinSoft. (http://viniciusjarina.googlepages.com/)
+ Description : Application registration resource file
+============================================================================
+*/
+
+#include <appinfo.rh>
+#include <Eris.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xeee3c37c
+
+RESOURCE APP_REGISTRATION_INFO
+  {
+  app_file="Eris";
+  localisable_resource_file = "\\resource\\apps\\Eris";
+  localisable_resource_id = R_ERIS_LOCALISABLE_APP_INFO;
+  embeddability=KAppNotEmbeddable;
+  newfile=KAppDoesNotSupportNewFile;
+  hidden = KAppIsHidden; //KAppNotHidden
+  }

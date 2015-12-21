@@ -1,0 +1,185 @@
+/*
+============================================================================
+ Name        : Eris.rss
+ Author      : Vinicius Jarina (mailto:viniciusjarina@gmail.com)
+ Version     :
+ Copyright   : Copyright (c) 2009 JarinSoft. (http://viniciusjarina.googlepages.com/)
+ Description : Application resource file
+============================================================================
+*/
+
+//  RESOURCE IDENTIFIER
+NAME HEWB    // 4 letter ID
+
+
+//  INCLUDES
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <appinfo.rh>
+#include <avkon.mbg>
+#include <appinfo.rh>
+#include "Eris.hrh"
+#include "Eris.rls"
+
+//  RESOURCE DEFINITIONS
+
+// -----------------------------------------------------------------------------
+//
+//    Define the resource file signature
+//    This resource should be empty.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE
+    {
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    Default Document Name
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name
+    {
+    buf="HEWB";
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    Define default menu and CBA key.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    menubar = r_eris_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//    Localizable application information
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE LOCALISABLE_APP_INFO r_eris_localisable_app_info
+    {
+    short_caption = qtn_hewb_short_caption_string;
+    caption_and_icon = 
+    CAPTION_AND_ICON_INFO
+        {
+        caption = qtn_hewb_caption_string;
+        number_of_icons = 1;
+        icon_file = "\\resource\\apps\\Eris.mif";
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+//   r_eris_menubar
+//   Menubar for Eris example
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_eris_menubar
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_eris_menu; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+//   r_eris_menu
+//   Menu for "Options"
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_eris_menu
+    {
+    items =
+        {
+        // added the new Options menu command here
+        MENU_ITEM
+                {
+                command = EErisCmdMyPositionURL;
+                txt = qtn_hewb_my_position;
+                },
+        MENU_ITEM
+                {
+                command = EErisCmdSendMyPosition;
+                txt = qtn_hewb_send_my_postion;
+                },
+        MENU_ITEM
+                {
+                command = EErisCmdQuit;
+                txt = qtn_hewb_quit;
+                },
+        MENU_ITEM
+                {
+                command = EErisCmdAbout;
+                txt = qtn_hewb_about;
+                },
+        MENU_ITEM
+                {
+                command = EAknSoftkeyExit;
+                txt = qtn_hewb_exit;
+                }
+        };
+    }
+
+//-----------------------------------------------------------------------------
+//
+//    r_message_query_dialog
+//
+//-----------------------------------------------------------------------------
+//	
+RESOURCE DIALOG r_message_query_dialog 
+	{ 
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL; 
+	items= 
+		{ 
+		DLG_LINE
+			{ 
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId; 
+			control = AVKON_HEADING
+				{ 
+				headinglayout=R_AVKON_LIST_HEADING_PANE_POPUPS; 
+				};
+			}, 
+		DLG_LINE
+			{ 
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY 
+				{ 
+				};
+			} 
+		};
+	}
+
+//-----------------------------------------------------------------------------
+//
+//    r_about_heading_text
+//    Text which is used by about qyery head.
+//
+//-----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_about_heading_text { buf = qtn_about_heading; }
+	
+//-----------------------------------------------------------------------------
+//
+//    r_about_message_text
+//    Text which is used by about message.
+//
+//-----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_about_message_text { buf = qtn_about_message; }
+	
+// End of File

@@ -1,0 +1,38 @@
+/*
+============================================================================
+ Name        : Eris.rls
+ Author      : Vinicius Jarina (mailto:viniciusjarina@gmail.com)
+ Version     :
+ Copyright   : Copyright (c) 2009 JarinSoft. (http://viniciusjarina.googlepages.com/)
+ Description : String localization file
+============================================================================
+*/
+
+//  LOCALISATION STRINGS
+
+//d:Caption string for app.
+rls_string qtn_hewb_caption_string "Eris"
+
+//d:Short caption string for app.
+rls_string qtn_hewb_short_caption_string "Eris"
+
+rls_string qtn_hewb_my_position "My Position URL"
+rls_string qtn_hewb_send_my_postion "Send My Position"
+rls_string qtn_hewb_quit "Exit"
+rls_string qtn_hewb_about "About"
+
+//d:Third item in "Options" menu pane, "exit" event.
+rls_string qtn_hewb_exit "Hide"
+
+rls_string qtn_message_query_dialog_heading "Heading"
+
+// About dialog
+rls_string qtn_about_heading	"About Eris"
+rls_string qtn_about_message	"Eris for Series 60 3rd Ed.\n" \
+								"Copyright © 2009 JarinSoft.\n" \
+								"*Email: viniciusjarina@gmail.com.\n" \
+								"*Web: http://viniciusjarina.googlepages.com/"
+								
+
+
+// End of File
